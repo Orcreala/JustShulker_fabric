@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "com.justshulker.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"BlockItemMixin",
+		"ItemMixin",
+		"ShulkerBoxMenuMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

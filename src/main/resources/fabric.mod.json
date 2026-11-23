@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "justshulker",
+	"version": "1.0.0",
+	"name": "JustShulker",
+	"description": "JustShulker mod",
+	"authors": [
+		"莫耶尔"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/justshulker/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.justshulker.Justshulker"
+		]
+	},
+	"mixins": [
+		"justshulker.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
