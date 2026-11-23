@@ -8,8 +8,9 @@
 		"莫耶尔"
 	],
 	"contact": {
-		"homepage": "",
-		"sources": ""
+		"homepage": "https://github.com/Orcreala/JustShulker",
+		"sources": "https://github.com/Orcreala/JustShulker",
+		"issues": "https://github.com/Orcreala/JustShulker/issues"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/justshulker/icon.png",
