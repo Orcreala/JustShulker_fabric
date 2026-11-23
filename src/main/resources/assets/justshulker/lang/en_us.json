@@ -1,5 +1,5 @@
 {
   "modmenu.nameTranslation.justshulker": "JustShulker",
-  "modmenu.summaryTranslation.justshulker": "A minimal shulker box extension",
-  "modmenu.descriptionTranslation.justshulker": "right-click opens shulker box items directly, sneak + right-click places normally."
+  "modmenu.summaryTranslation.justshulker": "Right-click shulker/ender chest items to open",
+  "modmenu.descriptionTranslation.justshulker": "A minimal container item extension: right-click shulker box or ender chest items to open GUI directly, sneak + right-click places normally."
 }

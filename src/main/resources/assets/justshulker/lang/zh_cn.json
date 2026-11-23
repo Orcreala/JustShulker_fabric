@@ -1,5 +1,5 @@
 {
-  "modmenu.nameTranslation.justshulker": "快捷潜影盒",
-  "modmenu.summaryTranslation.justshulker": "极简的潜影盒拓展",
-  "modmenu.descriptionTranslation.justshulker": "右键直接打开潜影盒物品，潜行右键正常放置。"
+  "modmenu.nameTranslation.justshulker": "快捷容器",
+  "modmenu.summaryTranslation.justshulker": "右键潜影盒/末影箱物品直接打开",
+  "modmenu.descriptionTranslation.justshulker": "极简的容器物品拓展：右键潜影盒或末影箱物品直接打开 GUI，潜行右键正常放置。"
 }
