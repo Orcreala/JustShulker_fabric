@@ -4,8 +4,7 @@
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"BlockItemMixin",
-		"ItemMixin",
-		"ShulkerBoxMenuMixin"
+		"ItemMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

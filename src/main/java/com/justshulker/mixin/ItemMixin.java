@@ -75,8 +75,8 @@ public class ItemMixin {
                 Component.translatable("container.enderchest")
             ));
         } else {
-            // 潜影盒：内容存 ItemStack 里，用工具类处理读写
-            ShulkerBoxOpener.open(serverPlayer, player.getItemInHand(hand));
+            // 潜影盒：SyncingContainer 实时写回，不需要关闭时再处理
+            ShulkerBoxOpener.open(serverPlayer, hand);
         }
 
         cir.setReturnValue(InteractionResult.SUCCESS);

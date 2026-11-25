@@ -54,6 +54,8 @@ public class BlockItemMixin {
         if (!isShulker && !isEnderChest) return;
 
         // 第二步：潜行右键 → 不拦截，原版正常放置
+        // （SyncingContainer.setChanged() 已经实时把内容写回 ItemStack 了，
+        //   原版 place() 拿到的就是最新物品 → 地上的潜影盒也会带内容 ✅）
         if (context.getPlayer() == null || context.getPlayer().isShiftKeyDown()) return;
 
         // 第三步：服务端才真正打开菜单
@@ -80,8 +82,8 @@ public class BlockItemMixin {
             ));
         } else {
             // 潜影盒：内容存在 ItemStack 的 DataComponents.CONTAINER 里
-            // 需要 ShulkerBoxOpener 来读写（打开时从 ItemStack 读，关闭时写回）
-            ShulkerBoxOpener.open(serverPlayer, context.getItemInHand());
+            // SyncingContainer.setChanged() 会实时写回，不需要手动 close 时再写
+            ShulkerBoxOpener.open(serverPlayer, context.getHand());
         }
 
         // 告诉游戏"这个交互已经被处理了"，原版放置逻辑不会执行
